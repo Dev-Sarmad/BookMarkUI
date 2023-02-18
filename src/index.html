@@ -14,21 +14,66 @@
     <title>BookMark</title>
   </head>
   <body class="overflow-x-hidden">
-   <nav class="container relative mx-auto p-6">
-    <!-- flex container which containes the items and the logo -->
-    <div class="flex items-center justify-between">
+    <nav class="container relative mx-auto p-6">
+      <!-- flex container which containes the items and the logo -->
+      <div class="flex items-center justify-between">
         <!-- logo -->
         <div class="z-30">
-            <img src="./images/logo-bookmark.svg" alt="">
+          <img src="./images/logo-bookmark.svg" alt="" />
         </div>
         <!-- menu items -->
-       <div class=" hidden items-center space-x-10 md:flex text-grayisBlue uppercase">
-        <a href="#features" class="tracking-widest hover:text-softRed">Features</a>
-        <a href="#download" class="tracking-widest hover:text-softRed">Download</a>
-        <a href="#faq" class="tracking-widest hover:text-softRed">Faq</a>
-        <a href="#" class="tracking-widest hover:bg-white hover:text-softRed shadow-md rounded-lg border-2 border-softRed  bg-softRed px-2">Login</a>
-       </div>
-    </div>
-   </nav>
+        <div
+          class="hidden items-center space-x-10 md:flex text-grayisBlue uppercase"
+        >
+          <a href="#features" class="tracking-widest hover:text-softRed"
+            >Features</a
+          >
+          <a href="#download" class="tracking-widest hover:text-softRed"
+            >Download</a
+          >
+          <a href="#faq" class="tracking-widest hover:text-softRed">Faq</a>
+          <a
+            href="#"
+            class="tracking-widest hover:bg-white hover:text-softRed shadow-md rounded-lg border-2 border-softRed bg-softRed px-2"
+            >Login</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <section id="hero">
+      <!-- container for content and image -->
+      <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row">
+        <!-- the reason for flex-col-reverse because on small screen we want to image to top and content to bottom but on larger content on right first and image on left alighn -->
+        <!-- content -->
+          <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+            <h1 class=" text-center font-semibold text-3xl lg:text-6xl capitalize lg:text-left">A simple bookmark manager</h1>
+            <p class="mx-auto text-center max-w-md text-gray-400 text-lg lg:text-left lg:mt-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ex assumenda amet impedit alias at commodi voluptatibus voluptas blanditiis ipsam?</p>
+            <!-- button container here -->
+            <div class="flex justify-center items-center space-x-4 lg:justify-start">
+              <a href="" class="p-4 font-semibold text-white bg-softBlue rounded hover:bg-white hover:text-softBlue text-sm capitalize border-2 border-softBlue ">Get it on chrome</a>
+              <a href="" class="p-4 font-semibold text-black shadow-md bg-gray-300 rounded hover:bg-white hover:text-gray-600 text-sm capitalize border-2 border-gray-300 ">Get it on firefox</a>
+            </div>
+          </div>
+        <!-- Image here  -->
+        <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+          <div class="bg-hero"></div>
+        <img src="./images/illustration-hero.svg" alt="" class="relative z-10  overflow-x-visible lg:top-24 xl:top-0 ">
+      </div>
+    </section>
+    <!-- features section -->
+    <sectio id="features">
+      <div class="container mx-auto px-6 mt-16">
+        <h2 class=" text-center font-semibold text-3xl capitalize ">Features</h2>
+            <p class="mx-auto text-center mt-5 max-w-md text-gray-400 text-lg ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ex assumenda amet impedit alias at commodi voluptatibus voluptas blanditiis ipsam?</p>
+      </div>
+    </sectio>
+    <!-- tabs section -->
+    <section id="tabs">
+      <!-- tabs container here -->
+      <div class="container relative mx-auto my-6 mt-12 px-6 mb-32">
+        <div class="bg-tabs"></div>
+      </div>
+    </section>
   </body>
 </html>
