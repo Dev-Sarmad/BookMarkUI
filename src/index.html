@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link href="/dist/output.css" rel="stylesheet" />
+    <script src="/index.js" defer ></script>
     <title>BookMark</title>
   </head>
   <body class="overflow-x-hidden">
@@ -68,7 +69,7 @@
             <p class="mx-auto text-center mt-5 max-w-md text-gray-400 text-lg ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ex assumenda amet impedit alias at commodi voluptatibus voluptas blanditiis ipsam?</p>
       </div>
     </sectio>
-    <!-- tabs section -->
+    <!-- tabs and pannel section -->
     <section id="tabs">
       <div class="container relative mx-auto my-6 mt-12 px-6 mb-32">
         <div class="bg-tabs"></div>
@@ -94,7 +95,7 @@
           </div>
         </div>
         <!-- tab pannels -->
-        <section id="pannel" class="container mx-auto ">
+        <div id="pannel" class="container mx-auto ">
           <!-- pannel-1 -->
           <div class="flex flex-col md:flex-row md:space-x-7 py-5 pannel-1 pannel">
             <div class="flex justify-center md:w-1/2">
@@ -134,7 +135,64 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
+    <!-- download section here  -->
+    <section id="download" class="  container  mx-auto mt-3">
+      <!-- card container -->
+      <div class="flex relative flex-col justify-center max-w-5xl items-center space-y-3 space-x-0 md:flex-row md:space-x-7 md:space-y-0">
+        <!--  card 1 -->
+        <div class="flex flex-col w-full  py-3 space-y-4 rounded-lg shadow-xl text-center">
+        <!-- image  -->
+        <div class="flex justify-center">
+          <img src="images/logo-chrome.svg" alt="">
+        </div>
+        <!-- text -->
+        <h5 class="text-xl  font-bold">Add To Chrome</h5>
+        <p class="text-gray-600">Min version 7.2</p>
+        <div class="bg-[url('images/bg-dots.svg')]">
+          <a href="" class="block w-full font-semibold py-3 text-white bg-softBlue rounded-lg hover:bg-white hover:text-softBlue text-sm capitalize border-2 border-softBlue ">Add & Install Extension</a>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="w-full md:1/3 ">
+        <div class="flex flex-col w-full py-3 space-y-4 rounded-lg shadow-xl text-center  md:mt-8">
+          <!-- image  -->
+          <div class="flex justify-center">
+            <img src="images/logo-firefox.svg" alt="">
+          </div>
+          <!-- text -->
+          <h5 class="text-xl  font-bold">Add To Firefox</h5>
+          <p class="text-gray-600">Min version 9.0</p>
+          <div class="bg-[url('images/bg-dots.svg')]">
+            <a href="" class="block w-full font-semibold py-3 text-white bg-softBlue rounded-lg hover:bg-white hover:text-softBlue text-sm capitalize border-2 border-softBlue ">Install Extension On Firefox</a>
+          </div>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="w-full md:1/3 ">
+        <div class="flex flex-col w-full md:mt-16 py-3 space-y-4 rounded-lg shadow-xl text-center ">
+          <!-- image  -->
+          <div class="flex justify-center">
+            <img src="images/logo-opera.svg" alt="">
+          </div>
+          <!-- text -->
+          <h5 class="text-xl  font-bold">Add To opera</h5>
+          <p class="text-gray-600">Min version 9.0</p>
+          <div class="bg-[url('images/bg-dots.svg')]">
+            <a href="" class="block w-full font-semibold py-3 text-white bg-softBlue rounded-lg hover:bg-white hover:text-softBlue text-sm capitalize border-2 border-softBlue ">Install Extension Opera</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- faq section -->
+    <section id="faq">
+      <div class="container mx-auto mt-10">
+        <h2 class="font-semibold md:text-4xl text-3xl text-center capitalize">
+          Frequently asked questions
+        </h2>
+        <p class="text-grayisBlue mx-auto max-w-lg px-6 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, exercitationem!</p>
       </div>
     </section>
   </body>
