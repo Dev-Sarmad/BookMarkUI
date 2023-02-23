@@ -13,6 +13,22 @@
 
 const tabs = document.querySelectorAll(".tab");
 const pannels = document.querySelectorAll(".pannel");
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+const logo = document.getElementById("logo");
+
+btn.addEventListener("click", toggleMenue);
+function toggleMenue() {
+  btn.classList.toggle("open");
+  menu.classList.toggle("hidden");
+  menu.classList.toggle("flex");
+  if (menu.classList.contains("flex")) {
+    
+    logo.setAttribute("src", "./images/logo-bookmark.svg");
+  } else {
+    logo.setAttribute("src", "./images/logo-bookmark-footer.svg");
+  }
+}
 
 tabs.forEach((tab) => tab.addEventListener("click", ontab));
 function ontab(e) {
